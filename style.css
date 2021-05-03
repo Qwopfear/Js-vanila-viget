@@ -1,0 +1,94 @@
+@font-face {
+    font-family: Helvetica;
+    src: url(/fonts/Helvetica.ttf);
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #F6F6f6;
+    font-weight: 100;
+}
+@keyframes  fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    transition: ease-in-out 1s;
+    animation: fadein 1s linear;
+
+}
+
+.main_content{
+    max-width: 800px;
+    margin: 400px auto 100px auto;
+    text-align: center;
+    align-items: center;
+}
+.clock{
+    font-size: 70px;
+}
+.greetings_form input{
+    width: 500px;
+	font-size: 40px;
+	padding: 6px 0 4px 10px;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid white;
+    transition: ease-in-out 1s;
+    color: whitesmoke;
+}
+.greetings{
+    font-size: 60px;
+    
+}
+.greetings_form, .greetings{
+    display: none;
+    transition: ease-in-out 1s;
+}
+.showing{
+    display: block;
+}
+
+.toDo{
+    float: right;
+    
+    margin-right: 100px;
+    padding: 25px;
+    border-radius: 25px;
+    border: #F6F6f6;
+    border-style: ridge;
+
+    
+}
+
+.toDo li{
+    display: block;
+    opacity: 1;
+    margin: 0 auto 10px auto;
+}
+input::-webkit-input-placeholder { 
+    color: white;
+    font-size: 18px;    
+}
+.toDoForm input{
+    border:none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: whitesmoke;
+    outline: none;
+    opacity: 1;
+}
